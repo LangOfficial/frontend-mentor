@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Order summary card</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="font-primary font-bold500 text-neutral600 halfxl:bg-neutral301 halfxl:p-6 halfxl:grid halfxl:place-items-center">
+    <div class="rounded-lg p-4 halfxl:bg-neutral100 halfxl:max-w-2.51xl halfxl:px-8 halfxl:pt-8">
+      <div class="mb-8 flex items-center">
+        <h1 class="mr-2 text-2xl font-bold800 text-neutral900">
+          Notifications
+        </h1>
+        <div
+          class="mr-auto rounded-md bg-primaryBlue px-3 py-0.5 font-bold800 text-neutral100" id="notification-count"
+        >
+          3
+        </div>
+        <p class="cursor-pointer primary-hover" id="mark-all-read">Mark all as read</p>
+      </div>
+      <div class="flex flex-col gap-3">
+        <div class="notification-unread-container">
+          <img
+            class="notification-pfp"
+            src="images/avatar-mark-webber.webp"
+            alt="mark webber"
+          />
+
+          <div>
+            <span class="font-bold800 text-neutral900 cursor-pointer primary-hover">Mark Webber</span>
+            <span class="mx-1">reacted to your recent post</span>
+            <span class="font-bold800 cursor-pointer primary-hover">My first tournament today!</span>
+            <div class="notification-alert"></div>
+            <div class="mt-0.5">1m ago</div>
+          </div>
+        </div>
+        <div class="notification-unread-container items-center">
+          <img
+            class="notification-pfp"
+            src="images/avatar-angela-gray.webp"
+            alt="angela-gray"
+          />
+
+          <div>
+            <span class="font-bold800 text-neutral900 cursor-pointer primary-hover">Angela Gray</span>
+            <span class="ml-1">followed you</span>
+            <div class="notification-alert"></div>
+            <div class="mt-0.5">5m ago</div>
+          </div>
+        </div>
+        <div class="notification-unread-container">
+          <img
+            class="notification-pfp"
+            src="images/avatar-jacob-thompson.webp"
+            alt="jacob-thompson"
+          />
+
+          <div>
+            <span class="font-bold800 text-neutral900 cursor-pointer primary-hover">Jacob Thompson</span>
+            <span class="mx-1">has joined your group</span>
+            <span class="text-primaryBlue font-bold800 cursor-pointer">Chess Club</span>
+            <div class="notification-alert"></div>
+            <div class="mt-0.5">1 day ago</div>
+          </div>
+        </div>
+        <div class="notification-read-container">
+          <img
+            class="notification-pfp"
+            src="images/avatar-rizky-hasanuddin.webp"
+            alt="rizky Hasanuddin"
+          />
+
+          <div>
+            <span class="font-bold800 text-neutral900 cursor-pointer primary-hover">Rizky Hasanuddin</span>
+            <span class="mx-1">sent you a private message</span>
+            <div class="mt-0.5 mb-2">5 day ago</div>
+            <div class="border border-neutral500 p-4 rounded hover:bg-neutral302 cursor-pointer ease-in-out duration-200">
+              Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.
+            </div>
+          </div>
+        </div>
+        <div class="notification-read-container">
+          <img
+            class="notification-pfp"
+            src="images/avatar-kimberly-smith.webp"
+            alt="Kimberly Smith"
+          />
+
+          <div class="mr-auto">
+            <span class="font-bold800 text-neutral900 cursor-pointer primary-hover">Kimberly Smith</span>
+            <span class="ml-2">commented on your picture</span>
+            <div class="mt-0.5">1 week ago</div>
+          </div>
+          <img class="w-12 h-12 cursor-pointer" src="images/image-chess.webp" alt="">
+        </div>
+        <div class="notification-read-container pb-0">
+          <img
+            class="notification-pfp"
+            src="images/avatar-nathan-peterson.webp"
+            alt="Nathan Peterson"
+          />
+
+          <div>
+            <span class="font-bold800 text-neutral900 cursor-pointer primary-hover">Nathan Peterson</span>
+            <span class="mx-1">reacted to your recent post</span>
+            <span class="font-bold800">5 end-game strategies to increase your win rate</span>
+            <div class="mt-0.5">2 weeks ago</div>
+          </div>
+        </div>
+        <div class="notification-read-container items-center halfxl:pb-0">
+          <img
+            class="notification-pfp"
+            src="images/avatar-anna-kim.webp"
+            alt="anna kim"
+          />
+
+          <div>
+            <span class="font-bold800 text-neutral900 cursor-pointer primary-hover">Anna Kim</span>
+            <span class="mx-1">has left your group</span>
+            <span class="text-primaryBlue font-bold800 cursor-pointer">Chess Club</span>
+            <div class="mt-0.5">2 weeks ago</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

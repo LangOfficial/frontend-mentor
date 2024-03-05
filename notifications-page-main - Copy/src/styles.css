@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.notification-unread-container {
+  @apply flex rounded-md p-4 py-5 bg-neutral200;
+}
+
+.notification-read-container {
+  @apply flex rounded-md p-4;
+}
+
+.notification-alert {
+  @apply ml-1 inline-block h-2.5 w-2.5 rounded-[50%] bg-primaryRed;
+}
+
+.notification-pfp {
+  @apply mr-4 h-14 w-14;
+}
+
+.primary-hover {
+  @apply hover:text-primaryBlue transition ease-in-out duration-200
+}
