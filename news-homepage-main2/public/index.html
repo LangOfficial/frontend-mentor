@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | News homepage</title>
+    <link rel="stylesheet" href="vanillaStyles.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="halfxl: font-primary">
+    <div class="overlay-shadow hidden halfxl:hidden"></div>
+    <nav
+      class="flex items-center justify-between px-6 py-10 halfxl:px-20 halfxl:py-10"
+    >
+      <img class="cursor-pointer" src="images/logo.svg" alt="logo home" />
+
+      <ul
+        class="absolute bottom-0 right-0 flex hidden min-h-full w-5/12 flex-col justify-center bg-neutral100 px-4 animate-forward halfxl:static halfxl:flex halfxl:min-h-0 halfxl:w-auto halfxl:flex-row halfxl:gap-5 halfxl:bg-none halfxl:p-0 "
+        id="menu"
+      >
+        <li>
+          <a href="#leading-img" class="nav-item underline-animation">Home</a>
+        </li>
+        <li>
+          <a href="#header-title" class="nav-item underline-animation">New</a>
+        </li>
+        <li>
+          <a href="#new-articles" class="nav-item underline-animation"
+            >Popular</a
+          >
+        </li>
+        <li>
+          <a href="#old-articles" class="nav-item underline-animation"
+            >Trending</a
+          >
+        </li>
+        <li>
+          <a href="#" class="nav-item underline-animation">Categories</a>
+        </li>
+      </ul>
+      <button class="z-50 halfxl:hidden" id="menu-button">
+        <img class="w-14" src="images/icon-menu.svg" alt="" />
+      </button>
+    </nav>
+    <section class="padding-space content-container pb-10">
+      <section class="leading-img mb-5" id="leading-img">
+        <img
+          class="responsive-img"
+          src="images/image-web-3-mobile.jpg"
+          alt=""
+          id="bright-future-img"
+        />
+      </section>
+
+      <section class="header-title mb-5" id="header-title">
+        <h1
+          class="text-[2.7rem] font-extrabold halfxl:max-w-[20rem] halfxl:text-6xl"
+        >
+          The Bright Future of Web 3.0?
+        </h1>
+      </section>
+
+      <section
+        class="title-description mb-16 text-[.93rem] halfxl:mb-0"
+        id="title-description"
+      >
+        <p class="mb-7 text-neutral500 halfxl:max-w-[40ch]">
+          We dive into the next evolution of the web that claims to put the
+          power of the platforms back into the hands of the people.but is it
+          really fulfilling its promise?
+        </p>
+        <button
+          class="bg-primary500 px-8 py-4 font-bold uppercase tracking-widestReal text-neutral100"
+        >
+          read more
+        </button>
+      </section>
+
+      <section
+        class="new-articles mb-20 bg-neutral900 p-7 halfxl:ml-8 halfxl:py-10"
+        id="new-articles"
+      >
+        <h2 class="mb-10 text-4xl font-extrabold text-primary400">New</h2>
+        <article>
+          <h3 class="mb-2 text-xl font-bold text-neutral100">
+            Hydrogren VS Electric Cars
+          </h3>
+          <p class="text-[1.05rem] leading-8 text-neutral200">
+            Will hydrogren-fuled cars ever catch up to EVS?
+          </p>
+        </article>
+        <hr class="my-7 border-neutral200 border-opacity-70" />
+        <article>
+          <h3 class="mb-2 text-xl font-bold text-neutral100">
+            The Downsides of AI Artistry
+          </h3>
+          <p class="text-[1.05rem] leading-8 text-neutral200">
+            What are the possible adverse effects of on-demand AI image
+            generation?
+          </p>
+        </article>
+        <hr class="my-7 border-neutral200 border-opacity-70" />
+        <article>
+          <h3 class="mb-2 text-xl font-bold text-neutral100">
+            Is VC Funding Drying Up?
+          </h3>
+          <p class="text-[1.05rem] leading-8 text-neutral200">
+            Private funding by VC firms is down 50% YOY. We take a look at what
+            that means.
+          </p>
+        </article>
+      </section>
+
+      <section
+        class="old-articles mt-10 flex flex-col gap-10 halfxl:mt-0 halfxl:grid halfxl:grid-cols-3 halfxl:flex-row halfxl:gap-0"
+        id="old-articles"
+      >
+        <article class="flex items-center">
+          <img
+            class="w-36 halfxl:w-28"
+            src="images/image-retro-pcs.jpg"
+            alt=""
+          />
+          <div class="ml-6 flex flex-col gap-4">
+            <h1 class="text-5xl font-extrabold text-neutral200">01</h1>
+            <h2 class="text-lg font-extrabold sm:text-2xl halfxl:text-xl">
+              Reviving Retro PCs
+            </h2>
+            <p class="text-neutral500">
+              What happens when old PCs are given modern upgrades?
+            </p>
+          </div>
+        </article>
+        <article class="flex items-center">
+          <img
+            class="w-36 halfxl:w-28"
+            src="images/image-top-laptops.jpg"
+            alt=""
+          />
+          <div class="ml-6 flex flex-col gap-4">
+            <h1 class="text-5xl font-extrabold text-neutral200">02</h1>
+            <h2 class="font-extrabold sm:text-2xl halfxl:text-xl">
+              Top 10 Laptops of 2022
+            </h2>
+            <p class="text-neutral500">
+              Our best picks for various needs and budgets
+            </p>
+          </div>
+        </article>
+        <article class="flex items-center">
+          <img
+            class="w-36 halfxl:w-28"
+            src="images/image-gaming-growth.jpg"
+            alt=""
+          />
+          <div class="ml-6 flex flex-col gap-4">
+            <h1 class="text-5xl font-extrabold text-neutral200">03</h1>
+            <h2 class="text-lg font-extrabold sm:text-2xl halfxl:text-xl">
+              The Growth of Gaming
+            </h2>
+            <p class="text-neutral500">
+              How the pandemic has sparked fresh opportunities
+            </p>
+          </div>
+        </article>
+      </section>
+    </section>
+  </body>
+  <script src="script.js"></script>
+</html>

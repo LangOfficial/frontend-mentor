@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-item {
+  @apply text-lg halfxl:text-base text-neutral500 w-full p-2 mb-4 bg-neutral-200 inline-block hover:bg-opacity-75 halfxl:bg-transparent
+}
+
+.responsive-img {
+  @apply w-full h-auto object-cover bg-no-repeat
+}
+
+.padding-space {
+  @apply px-5 halfxl:px-20 halfxl:pb-16
+}
