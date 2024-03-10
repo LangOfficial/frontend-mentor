@@ -14,9 +14,6 @@ function updateImgs() {
   }
 }
 
-
-updateImgs();
-
 function removeMobileNav() {
   menuButtonImg.src = 'images/icon-menu.svg';
   menuButtonImg.classList.add('w-14');
@@ -44,6 +41,8 @@ navItems.forEach(navItem => {
   })
 })
 
+updateImgs();
+
 window.addEventListener('resize', updateImgs);
 menuButton.addEventListener('click', () => {
   if (menuButtonImg.classList.contains('w-14')) {
@@ -57,14 +56,10 @@ menuButton.addEventListener('click', () => {
   toggleMenu();
 });
 
-menuButton.addEventListener('click', () => {
-  slideToggle();
-});
+menuButton.addEventListener('click', slideToggle);
 
 menu.addEventListener('animationend', e=> {
-  console.log(e.animationName);
   if (e.animationName === 'slideIn') {
     menu.classList.add('hidden');
-
   }
 })

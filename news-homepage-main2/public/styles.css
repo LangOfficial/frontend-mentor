@@ -567,6 +567,11 @@ video {
   margin-bottom: 1.75rem;
 }
 
+.my-9{
+  margin-top: 2.25rem;
+  margin-bottom: 2.25rem;
+}
+
 .mb-10{
   margin-bottom: 2.5rem;
 }
@@ -599,6 +604,18 @@ video {
   margin-top: 2.5rem;
 }
 
+.mt-2{
+  margin-top: 0.5rem;
+}
+
+.mb-8{
+  margin-bottom: 2rem;
+}
+
+.mb-9{
+  margin-bottom: 2.25rem;
+}
+
 .flex{
   display: flex;
 }
@@ -627,16 +644,6 @@ video {
   width: 2rem;
 }
 
-.translate-x-0{
-  --tw-translate-x: 0px;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-x-full{
-  --tw-translate-x: 100%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .cursor-pointer{
   cursor: pointer;
 }
@@ -661,12 +668,16 @@ video {
   justify-content: space-between;
 }
 
-.gap-10{
-  gap: 2.5rem;
-}
-
 .gap-4{
   gap: 1rem;
+}
+
+.gap-7{
+  gap: 1.75rem;
+}
+
+.gap-6{
+  gap: 1.5rem;
 }
 
 .overflow-hidden{
@@ -810,12 +821,12 @@ video {
   color: hsl(35 77% 62% / var(--tw-text-opacity));
 }
 
-.duration-1000{
-  transition-duration: 1000ms;
+.duration-200{
+  transition-duration: 200ms;
 }
 
-.ease-linear{
-  transition-timing-function: linear;
+.ease-in{
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
 .nav-item{
@@ -864,6 +875,16 @@ video {
   }
 }
 
+.hover\:bg-neutral900:hover{
+  --tw-bg-opacity: 1;
+  background-color: hsl(240 100% 5% / var(--tw-bg-opacity));
+}
+
+.hover\:text-primary400:hover{
+  --tw-text-opacity: 1;
+  color: hsl(35 77% 62% / var(--tw-text-opacity));
+}
+
 @media (min-width: 640px){
   .sm\:text-2xl{
     font-size: 1.5rem;
@@ -880,12 +901,28 @@ video {
     margin-bottom: 0px;
   }
 
-  .halfxl\:ml-8{
-    margin-left: 2rem;
-  }
-
   .halfxl\:mt-0{
     margin-top: 0px;
+  }
+
+  .halfxl\:mt-3{
+    margin-top: 0.75rem;
+  }
+
+  .halfxl\:mt-6{
+    margin-top: 1.5rem;
+  }
+
+  .halfxl\:mt-8{
+    margin-top: 2rem;
+  }
+
+  .halfxl\:mb-5{
+    margin-bottom: 1.25rem;
+  }
+
+  .halfxl\:mb-6{
+    margin-bottom: 1.5rem;
   }
 
   .halfxl\:flex{
@@ -926,10 +963,6 @@ video {
 
   .halfxl\:flex-row{
     flex-direction: row;
-  }
-
-  .halfxl\:gap-0{
-    gap: 0px;
   }
 
   .halfxl\:gap-5{

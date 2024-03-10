@@ -3,6 +3,8 @@
     display: grid;
     /* grid-template-columns: repeat(3, minmax(0, 1fr));
     grid-template-rows: repeat(3, minmax(0, 1fr)); */
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.5rem;
     grid-template-areas: 
       "leading-img leading-img new-articles"
       "title description new-articles"
@@ -27,6 +29,8 @@
 
   .old-articles {
     grid-area: old-articles;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
