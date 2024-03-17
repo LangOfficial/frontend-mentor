@@ -484,6 +484,17 @@ video {
 .animate-fadeIn{
   animation: fadeIn 1s ease-in-out;
 }
+@keyframes fadeOut{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+.animate-fadeOut{
+  animation: fadeOut .7s ease-in-out;
+}
 .cursor-pointer{
   cursor: pointer;
 }
