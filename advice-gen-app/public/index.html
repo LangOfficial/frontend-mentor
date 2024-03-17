@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="build/main.css" />
+  </head>
+  <body class="bg-neutral-800 p-3 flex-centered">
+    <section
+      class="bg-neutral-700 rounded-xl w-full relative max-w-lg py-10 px-4"
+    >
+      <div class="font-primary text-center">
+        <p class="uppercase text-primary-200 tracking-widest">
+          A d v i c e
+          <span class="ml-2">#</span>
+          <span class="tracking-spacebar advice-animation" id="advice-number">117</span>
+        </p>
+        <p class="text-primary-200 text-[1.75rem] mb-10 mt-6">
+          "
+          <span class="advice-animation" id="advice"
+            >It is easy to sit up and take notice what's difficult is getting up
+            and taking action</span
+          >"
+        </p>
+      </div>
+      <img
+        class="mt-4 mx-auto mb-10"
+        src="build/images/pattern-divider-mobile.svg"
+        alt=""
+        id="pattern-divider"
+      />
+      <div class="absolute left-1/2 -translate-x-1/2 top-full -translate-y-1/2" id="dice">
+        <div
+          class="w-16 h-16 bg-primary-400 rounded-full relative cursor-pointer opacity-90 hover:opacity-100 hover:shadow-whiteGlow duration-200 ease-in-out"
+        >
+          <img
+            class="absolute centered"
+            src="build/images/icon-dice.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="build/script.js"></script>
+  <script src="build/adviceSlip.js"></script>
+</html>
