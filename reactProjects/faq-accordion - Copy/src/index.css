@@ -1,9 +1,0 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-.centered {
-  @apply absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2;
-}
