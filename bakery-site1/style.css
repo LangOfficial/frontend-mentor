@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-item {
+  @apply cursor-pointer text-neutral-100 ease-in mb-2 lg:mb-0 text-sm font-semibold;
+}
+
+@media (min-width: 1024px) {
+  .nav-item--grow-up {
+    @apply relative before:bg-green-300 before:duration-300 before:h-0 before:w-full before:absolute before:-bottom-4 before:hover:h-1 hover:opacity-100;
+  }
+}
+
+.vertical-img {
+  @apply w-96 lg:w-[700px] rounded-lg max-w-full;
+}
+
+.img-and-text {
+  @apply flex flex-col lg:flex-row-reverse items-center gap-6 lg:justify-center lg:gap-10 text-center lg:text-start;
+}
+
+.card-container {
+  @apply px-5 flex-1 py-10 grid grid-rows-3 text-center bg-white rounded-lg gap-2 ;
+  
+  .service-button {
+    @apply px-4 py-2 rounded-md font-bold text-slate-800 bg-primary-400 hover:bg-opacity-85 duration-200 ease-in-out;
+  }
+}
+
+.fa-star, .fa-star-half-stroke {
+  @apply text-yellow-400
+}
+
+.rating-group {
+  @apply flex items-center;
+  .avatar {
+    @apply w-14 h-14 mr-5 rounded-full;
+  }
+  .name {
+    @apply mr-5 text-sm italic;
+  }
+  .review {
+    @apply text-sm;
+  }
+}
+
+.rating-group-hr {
+  @apply border-b-2 border-neutral-300 pb-6;
+}
+
+.input-group {
+  @apply p-2 flex gap-2 items-center w-fit rounded-md;
+  input, textarea {
+    @apply rounded w-96 text-neutral-700;
+  }
+}
+
+input {
+  @apply font-primary
+}
+
