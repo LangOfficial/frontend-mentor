@@ -174,7 +174,7 @@ shownProduct.addEventListener('click', () =>{
   overlay2.classList.toggle('hidden');
   prodCarousel.classList.toggle('halfxl:hidden');
   thumbnailLBContainer.classList.toggle('hidden');
-  exitLB.classList.toggle('hidden');
+  exitLB.classList.remove('hidden');
 });
 
 window.addEventListener('resize', () => {
